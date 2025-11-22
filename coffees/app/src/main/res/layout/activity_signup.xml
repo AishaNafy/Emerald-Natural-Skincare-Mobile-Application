@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sign"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+    </ImageView>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <!-- Title -->
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Let's Sign Up"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:fontFamily="@font/krona"
+        tools:ignore="MissingConstraints"
+        />
+
+    <!-- Form Container -->
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/krona"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="Be part of us"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle">
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/labelUsername"   android:fontFamily="@font/krona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How can we call you"
+            android:inputType="text"
+            android:background="#2E49D1C6"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B7DDDDDD"
+            android:fontFamily="@font/krona"/>
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/krona"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:background="#434CAF50"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B7DDDDDD"
+        android:fontFamily="@font/krona"/>
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/labelPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/krona"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:background="#434CAF50"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B7DDDDDD"
+        android:fontFamily="@font/krona"/>
+
+        <!-- Re-enter Password -->
+        <TextView
+            android:id="@+id/labelReenterPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-enter Password"
+            android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/krona"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtReenterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter password"
+            android:inputType="textPassword"
+            android:background="#434CAF50"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B7DDDDDD"
+        android:fontFamily="@font/krona"/>
+
+        <!-- Terms and Conditions -->
+        <CheckBox
+            android:id="@+id/checkboxAgree"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Terms and Conditions"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/accent"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
