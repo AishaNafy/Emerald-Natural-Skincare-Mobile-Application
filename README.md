@@ -2,7 +2,7 @@
 # 🍃 Emerald : Natural Skincare Mobile-App
 
 <p align="center">
-  <img src="coffees/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" width="500">
+  <img src="coffees/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" width="350">
 </p>
 
 
