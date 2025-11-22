@@ -5,7 +5,6 @@
   <img src="coffees/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" width="350">
 </p>
 
-
 Emerald is a modern mobile application designed to enhance the natural skincare shopping experience by providing a smooth, interactive, and personalized platform for customers and product owners. The app allows users to explore a wide range of natural skincare products, place orders, receive personalized suggestions, and choose convenient delivery options all from the comfort of their home.
 
 With a focus on convenience, user engagement, and real-time product insights, Emerald ensures that customers never miss out on essential skincare items while enabling product owners to manage their services with ease.
