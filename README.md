@@ -1,3 +1,5 @@
+app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+
 # 🍃 Emerald : Natural Skincare Mobile-App
 
 Emerald is a modern mobile application designed to enhance the natural skincare shopping experience by providing a smooth, interactive, and personalized platform for customers and product owners. The app allows users to explore a wide range of natural skincare products, place orders, receive personalized suggestions, and choose convenient delivery options all from the comfort of their home.
@@ -65,6 +67,7 @@ To ensure the Emerald app meets user needs, several techniques were used:
 ---
 
 ## 🌐 Demo
+https://drive.google.com/file/d/1RehC16TWnS-5nMs-0oDj7eeCzUP47LM1/view
 ---
 
 ## 👩🏻‍💻 Author
